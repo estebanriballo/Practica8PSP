@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript y Desarrollo Web</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+</head>
+<body>
+    <div id="contenido">
+        <div id="titulo">
+            <h1><a name="Inicio">JavaScript y Desarrollo Web</a></h1>
+        </div>
+
+        <div id="lateral">
+            <div id="indice">
+                <h2 style="color: yellow;"><ins>Índice</ins></h2>
+                <ul>
+                    <li><a class="enlace" href="#Informacion">Información</a></li>
+                    <li><a class="enlace" href="#Sintaxis">Sintaxis</a></li>
+                    <li><a class="enlace" href="#DOM">Manipulación del DOM</a></li>
+                    <li><a class="enlace" href="#Eventos">Eventos</a></li>
+                </ul>
+            </div>
+            <div id="inicio">
+                <p><a class="rojo" href="#Inicio">Volver al Inicio</a></p>
+            </div>
+        </div>
+
+        <div id="texto">
+            <h2 style="color: yellow;"><a name="Informacion">Información</a></h2>
+            <p style="color: black;">JavaScript es un lenguaje de programación que permite crear contenido dinámico en la web.</p>
+            
+            <h2 style="color: yellow;"><a name="Sintaxis">Sintaxis</a></h2>
+            <p style="color: black;">La sintaxis básica de JavaScript incluye variables, funciones y estructuras de control.</p>
+            <pre>
+                <code style="color: black;">
+let nombre = "Juan";
+console.log("Hola, " + nombre);
+                </code>
+            </pre>
+
+            <h2 style="color: yellow;"><a name="DOM">Manipulación del DOM</a></h2>
+            <p style="color: black;">JavaScript permite modificar el contenido de una página mediante el DOM.</p>
+            <button id="mostrar">Mostrar Información</button>
+            <p id="info" style="display:none; color: black;">Aquí hay más información sobre la manipulación del DOM.</p>
+
+            <h2 style="color: yellow;"><a name="Eventos">Eventos</a></h2>
+            <p style="color: black;">Los eventos en JavaScript permiten capturar acciones del usuario.</p>
+        </div>
+
+        <div id="exit">
+            <p style="text-align:right;"><a class="rojo" href="index.html">Volver a la página principal</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
