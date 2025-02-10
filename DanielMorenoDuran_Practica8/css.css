@@ -1,0 +1,95 @@
+body {
+    background-image: url('imagenes/Fondo\ isaac.png');
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    font-family: Arial, sans-serif;
+}
+
+table, th, td {
+    border: 2px solid rgb(134, 42, 127);
+    border-collapse: collapse;
+}
+
+a.enlace {
+    color: rgb(255, 83, 83);
+}
+a.enlace:hover {
+    color: yellow;
+}
+a.otro {
+    color: rgb(180, 40, 169);
+}
+a.otro:hover {
+    color: red;
+}
+a.otro:visited {
+    color: rgb(57, 93, 212);
+}
+a.rojo {
+    color: red;
+}
+a.rojo:hover {
+    color: rgb(170, 5, 170);
+}
+a.rojo:visited {
+    color: rgb(57, 93, 212);
+}
+
+h1 {
+    text-transform: capitalize;
+    text-shadow: 0 0 5px #FF0000, 0 0 3px #b700ff;
+    font-style: italic;
+    text-align: center;
+}
+
+#contenido {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+#titulo {
+    position: relative;
+    top: 0px;
+    left: 140px;
+}
+
+#lateral {
+    position: fixed;
+    left: 10px;
+    height: 540px;
+}
+
+#indice {
+    position: relative;
+}
+
+#inicio {
+    position: relative;
+    bottom: -360px;
+}
+
+#texto {
+    position: relative;
+    left: 270px;
+}
+
+#exit {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
