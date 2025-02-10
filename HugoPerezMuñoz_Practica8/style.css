@@ -1,0 +1,226 @@
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  perspective: 1500px;
+  /* Sin padding para que header y footer ocupen 100% */
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header y navegación (100% ancho) */
+header {
+  width: 100%;
+  background: linear-gradient(90deg, #1976d2, #2196f3);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+.logo-text .letter {
+  display: inline-block;
+  animation: letterBounce 1s ease-in-out infinite;
+}
+.logo-text .letter:nth-child(1) { animation-delay: 0s; }
+.logo-text .letter:nth-child(2) { animation-delay: 0.1s; }
+.logo-text .letter:nth-child(3) { animation-delay: 0.2s; }
+.logo-text .letter:nth-child(4) { animation-delay: 0.3s; }
+.logo-text .letter:nth-child(5) { animation-delay: 0.4s; }
+.logo-text .letter:nth-child(6) { animation-delay: 0.5s; }
+.logo-text .letter:nth-child(7) { animation-delay: 0.6s; }
+@keyframes letterBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+nav {
+  flex: 1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav ul li {
+  margin: 0 0.8rem;
+}
+nav ul li a {
+  padding: 0.5rem 0;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  nav.active ul {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Secciones y contenedores */
+section {
+  padding: 2.5rem 0;
+  width: 100%;
+}
+.section-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateZ(0);
+  transition: transform 0.3s ease;
+}
+.section-content:hover {
+  transform: scale(1.05) !important;
+}
+
+/* Animación de aparición: zoomInBlur */
+@keyframes zoomInBlur {
+  0% {
+    transform: scale(0.8);
+    filter: blur(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.animate {
+  opacity: 0;
+}
+.animate.in-view {
+  animation: zoomInBlur 1.5s ease-out forwards;
+}
+
+/* Tipografía y formularios */
+h1, h2, h3, p, label {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button {
+  width: 120px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #0d47a1;
+}
+
+/* Footer (100% ancho) */
+footer {
+  width: 100%;
+  background: linear-gradient(90deg, #1976d2, #2196f3);
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.3);
+  padding: 1rem 0;
+  color: #fff;
+}
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background: #1e1e1e;
+}
+body.dark-mode nav ul li a {
+  color: #eee;
+}
+
+/* Responsive: ajustes Mobile First */
+@media screen and (max-width: 768px) {
+  .header-container, .footer-container {
+    padding: 0 1rem;
+  }
+}

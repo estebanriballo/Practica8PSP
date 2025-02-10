@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular - Todo sobre el Framework</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Fuente minimalista -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Vinculación de CSS y Font Awesome -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTnH/PRt6bQyyJQe7B9DJjVNNZpE8D+MFBq0nNUV4kqz0/6ZV1Xyg14OwLzNf2+SJEky0H0SAA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Cabecera (header) ocupando el 100% y con animación -->
+  <header class="animate">
+    <div class="header-container">
+      <div class="logo">
+        <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo">
+        <span class="logo-text">
+          <span class="letter">A</span>
+          <span class="letter">n</span>
+          <span class="letter">g</span>
+          <span class="letter">u</span>
+          <span class="letter">l</span>
+          <span class="letter">a</span>
+          <span class="letter">r</span>
+        </span>
+      </div>
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#ventajas">Ventajas</a></li>
+          <li><a href="#componentes">Componentes</a></li>
+          <li><a href="#arquitectura">Arquitectura</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#enrutamiento">Enrutamiento</a></li>
+          <li><a href="#casos">Casos de Uso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección: Introducción -->
+    <section id="introduccion">
+      <div class="section-content animate">
+        <h1>¿Qué es Angular?</h1>
+        <p>Angular es un framework de desarrollo web basado en TypeScript, creado y mantenido por Google. Facilita la construcción de aplicaciones dinámicas y escalables.</p>
+        <p>Su arquitectura modular y herramientas integradas permiten desarrollar aplicaciones SPA con gran rendimiento y mantenibilidad.</p>
+      </div>
+    </section>
+    
+    <!-- Sección: Características -->
+    <section id="caracteristicas">
+      <div class="section-content animate">
+        <h2>Características Principales</h2>
+        <p>Angular ofrece enlace de datos bidireccional, inyección de dependencias y un sistema robusto de enrutamiento, lo que optimiza el desarrollo de interfaces complejas.</p>
+        <p>Además, integra herramientas para pruebas, manejo de formularios y comunicación con APIs, haciendo que el desarrollo sea integral y eficiente.</p>
+      </div>
+    </section>
+    
+    <!-- Sección: Ventajas -->
+    <section id="ventajas">
+      <div class="section-content animate">
+        <h2>Ventajas de Angular</h2>
+        <p>La arquitectura basada en componentes de Angular favorece la reutilización de código y facilita el mantenimiento, resultando en aplicaciones robustas.</p>
+        <p>Con el respaldo de Google y una comunidad activa, Angular recibe soporte y actualizaciones continuas, consolidándose como una solución moderna para el desarrollo web.</p>
+      </div>
+    </section>
+    
+    <!-- Sección: Componentes -->
+    <section id="componentes">
+      <div class="section-content animate">
+        <h2>Componentes y Directivas</h2>
+        <p>Los componentes son bloques modulares que encapsulan la lógica y la interfaz de usuario, permitiendo una reutilización y mantenimiento sencillo.</p>
+        <p>Las directivas extienden el HTML añadiendo comportamientos personalizados, facilitando la manipulación del DOM sin modificar el código base.</p>
+      </div>
+    </section>
+    
+    <!-- Sección: Arquitectura -->
+    <section id="arquitectura">
+      <div class="section-content animate">
+        <h2>Arquitectura Moderna</h2>
+        <p>Angular adopta un patrón basado en componentes y el modelo MVC, separando la lógica de negocio de la presentación para un código limpio y organizado.</p>
+        <p>Esta estructura modular facilita el escalado y la integración de nuevas funcionalidades sin afectar la base del proyecto.</p>
+      </div>
+    </section>
+    
+    <!-- Sección: Servicios -->
+    <section id="servicios">
+      <div class="section-content animate">
+        <h2>Servicios y Módulos</h2>
+        <p>Los servicios permiten compartir datos y lógica entre componentes, centralizando funciones comunes de la aplicación.</p>
+        <p>Los módulos agrupan funcionalidades relacionadas, optimizando la carga y mejorando el rendimiento general.</p>
+      </div>
+    </section>
+    
+    <!-- Sección: Enrutamiento -->
+    <section id="enrutamiento">
+      <div class="section-content animate">
+        <h2>Enrutamiento y Navegación</h2>
+        <p>El enrutamiento en Angular facilita la creación de aplicaciones de una sola página (SPA) con transiciones suaves entre vistas, sin recargar la página.</p>
+        <p>Esto se traduce en una experiencia de usuario más rápida y fluida, adaptada a las exigencias del desarrollo moderno.</p>
+      </div>
+    </section>
+    
+    <!-- Sección: Casos de Uso -->
+    <section id="casos">
+      <div class="section-content animate">
+        <h2>Casos de Uso y Aplicaciones</h2>
+        <p>Angular se utiliza en una amplia gama de proyectos, desde aplicaciones empresariales hasta soluciones móviles y de escritorio, gracias a su versatilidad.</p>
+        <p>Su integración con diversas tecnologías y su robusto ecosistema lo hacen ideal para proyectos de cualquier escala.</p>
+      </div>
+    </section>
+    
+    <!-- Sección: Contacto (con formulario validado) -->
+    <section id="contacto">
+      <div class="section-content animate">
+        <h2>Contacto</h2>
+        <article>
+          <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required pattern="[A-Za-z\s]+" title="Solo letras y espacios.">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </article>
+        <aside>
+          <p>Nos pondremos en contacto contigo a la brevedad.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página (footer) ocupando el 100% -->
+  <footer class="animate">
+    <div class="footer-container">
+      <p>&copy; 2025 Angular. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
