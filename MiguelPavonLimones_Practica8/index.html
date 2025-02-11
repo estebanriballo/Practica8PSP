@@ -5,54 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información sobre React</title>
     <link rel="stylesheet" href="estilo.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="imagenes/imagen1.png" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <h1>React: Biblioteca de JavaScript</h1>
+        <button id="modo-oscuro">🌙 Modo Oscuro</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="#que-es-react">¿Qué es React?</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#por-que-usar">¿Por qué usar React?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Índice a la izquierda -->
-    <nav id="indice">
-        <h3>Índice</h3>
-        <ul>
-            <li><a href="#que-es-react">¿Qué es React?</a></li>
-            <li><a href="#caracteristicas">Características de React</a></li>
-            <li><a href="#por-que-usar">¿Por qué usar React?</a></li>
-        </ul>
-    </nav>
+    <section id="contenido">
+        <article id="que-es-react">
+            <h2>¿Qué es React?</h2>
+            <img src="imagenes/imagen1.png" alt="Logo de React" width="200">
+            <p>React es una biblioteca de JavaScript para construir interfaces de usuario interactivas...</p>
+        </article>
 
-    <h1 id="que-es-react">¿Qué es React?</h1>
-    <img src="imagenes/imagen1.png" alt="Logo de React" width="200">
-    <p><strong>
-        React es una biblioteca de JavaScript para construir interfaces de usuario interactivas.
-        React intenta ayudar a los desarrolladores a construir aplicaciones que usan datos que cambian 
-        todo el tiempo. Su objetivo es ser sencillo, declarativo y fácil de combinar. 
-        React sólo maneja la interfaz de usuario en una aplicación; 
-        React es la Vista en un contexto en el que se use el patrón MVC (Modelo-Vista-Controlador) 
-        o MVVM (Modelo-vista-modelo de vista). 
-        También puede ser utilizado con las extensiones de React-based que se encargan 
-        de las partes no-UI (que no forman parte de la interfaz de usuario) de una aplicación web.
-    </strong></p>
+        <article id="caracteristicas">
+            <h2>Características de React</h2>
+            <ul>
+                <li>Componentes reutilizables</li>
+                <li>Virtual DOM para mayor eficiencia</li>
+                <li>Unidirectional Data Flow</li>
+                <li>JSX como sintaxis</li>
+            </ul>
+            <img src="imagenes/imagen2.JPG" alt="Características de React" width="200">
+        </article>
 
-    <h1 id="caracteristicas">Características de React</h1>
-    <ul>
-        <li><strong>Componentes reutilizables:</strong> React permite crear componentes modulares y reutilizables, lo que facilita el mantenimiento y escalabilidad de aplicaciones grandes.</li>
-        <li><strong>Virtual DOM para mayor eficiencia:</strong> React usa un DOM virtual que mejora el rendimiento al minimizar las actualizaciones en el DOM real.</li>
-        <li><strong>Unidirectional Data Flow:</strong> Los datos en React fluyen en una sola dirección, lo que facilita la depuración y el mantenimiento del código.</li>
-        <li><strong>JSX como sintaxis:</strong> JSX es una extensión de JavaScript que permite escribir estructuras similares a HTML dentro del código JavaScript, mejorando la legibilidad y productividad.</li>
-    </ul>
-    <img src="imagenes/imagen2.JPG" alt="Características de React" width="200">
+        <article id="por-que-usar">
+            <h2>¿Por qué usar React?</h2>
+            <p>React es una de las bibliotecas más populares para el desarrollo frontend...</p>
+            <ul>
+                <li>Fácil de aprender</li>
+                <li>Gran comunidad y ecosistema</li>
+                <li>Alta eficiencia y rendimiento</li>
+            </ul>
+        </article>
 
-    <h1 id="por-que-usar">¿Por qué usar React?</h1>
-    <p><strong>React es una de las bibliotecas más populares para el desarrollo frontend debido a varias razones:</strong></p>
-    <ul>
-        <li><strong>Fácil de aprender:</strong> Su sintaxis basada en JavaScript y JSX lo hace accesible para desarrolladores con experiencia en JavaScript.</li>
-        <li><strong>Gran comunidad y ecosistema:</strong> Al ser ampliamente adoptado, cuenta con una gran cantidad de recursos, documentación y soporte de la comunidad.</li>
-        <li><strong>Alta eficiencia y rendimiento:</strong> Gracias al Virtual DOM, React optimiza la manipulación del DOM para mejorar la velocidad de la aplicación.</li>
-        <li><strong>Compatible con múltiples plataformas:</strong> Puede ser utilizado para desarrollar aplicaciones web, móviles (con React Native) y hasta soluciones de escritorio.</li>
-        <li><strong>Actualizaciones y mantenimiento continuo:</strong> Facebook y una gran comunidad respaldan React, asegurando su evolución y mejoras constantes.</li>
-    </ul>
+        <!-- Botón para el enlace a YouTube -->
+        <div id="youtube-button">
+            <button id="openURL">Ver en YouTube</button>
+        </div>
+    </section>
 
-    <button>Cambiar fondo</button>
-    <button id="openURL">Video Explicativo</button>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z ]{3,}">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
+    <footer>
+        <p>© 2024 Proyecto React | Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
