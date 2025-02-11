@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica 8</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -12,37 +13,71 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#"><img src="imagenes/javascript.png" width="25px"></a></li>
-                <li><a href="#">Angular</a></li>
-                <li><a href="#">React</a></li>
+                <li><a href="#Front-End">Front-End</a></li>
+                <li><a href="#Tecnologías-Front-End">Tecnologías Front-End</a></li>
+                <li><a href="#Frameworks-Librerias">Frameworks y Librerías</a></li>
+                <li><a href="MiguelPavonLimones_Practica8/index.html">React</a></li>
+                <li><a href="DanielMorenoDuran_Practica8/javascript.html">JavaScript</a></li>
+                <li><a href="HugoPerezMuñoz_Practica8/index.html">Angular</a></li>
+               
+                
             </ul>
         </nav>
     </header>
-    
+    <img id = "asdasd" src = "">
     <main>
-        <section id="text">
-        <article>
-            <h2>Tecnologías principales del Front-End</h2>
-            <p>El Front-End es la parte de una aplicación o sitio web con la que los usuarios interactúan directamente. Se encarga de la interfaz de usuario (UI), el diseño y la experiencia del usuario (UX). Básicamente, es todo lo que ves y con lo que puedes interactuar en un navegador.</p>
-        </article>
+        <section id="Front-End">
+            <article>
+                <h2>Front-End</h2>
+                <p>El Front-End es la parte de una aplicación o sitio web con la que los usuarios interactúan directamente. Se encarga de la interfaz de usuario (UI), el diseño y la experiencia del usuario (UX). Básicamente, es todo lo que ves y con lo que puedes interactuar en un navegador.</p>
+            </article>
         </section>
     </main>
     
     <aside>
-        <h3>Tecnologías principales del Front-End</h3>
-        <p>HTML (HyperText Markup Language) → Define la estructura del contenido.</p>
-        <p>CSS (Cascading Style Sheets) → Da estilo y diseño a la página (colores, fuentes, posiciones, etc.).</p>
-        <p>JavaScript (JS) → Añade interactividad y dinamismo (botones, animaciones, validaciones, etc.).</p>
+        <section id="Tecnologías-Front-End">
+            <h3>Tecnologías principales del Front-End</h3>
+            <p>HTML (HyperText Markup Language) → Define la estructura del contenido.</p>
+            <p>CSS (Cascading Style Sheets) → Da estilo y diseño a la página (colores, fuentes, posiciones, etc.).</p>
+            <p>JavaScript (JS) → Añade interactividad y dinamismo (botones, animaciones, validaciones, etc.).</p>
+        </section>
     </aside>
 
     <aside>
-        <h3>Frameworks y librerías populares</h3>
-        <p>React.js → Librería de JS para crear interfaces dinámicas.</p>
-        <p>Angular → Framework desarrollado por Google para aplicaciones más estructuradas.</p>
-        <p>Vue.js → Framework ligero y fácil de aprender.</p>
-        <p>Bootstrap, Tailwind CSS → Herramientas para estilos y diseño responsivo.</p>
+        <section id="Frameworks-Librerias">
+            <h3>Frameworks y librerías populares</h3>
+            <p>React.js → Librería de JS para crear interfaces dinámicas.</p>
+            <p>Angular → Framework desarrollado por Google para aplicaciones más estructuradas.</p>
+            <p>Vue.js → Framework ligero y fácil de aprender.</p>
+            <p>Bootstrap, Tailwind CSS → Herramientas para estilos y diseño responsivo.</p>
+        </section>
     </aside>
     
+    <!-- Sección: Contacto (con formulario validado) -->
+    
+    <section id="contacto">
+        <div class="section-content animate">
+          <h2>Contacto</h2>
+          <article>
+            <form id="contact-form">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required pattern="[A-Za-z\s]+" title="Solo letras y espacios.">
+             <br>
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+              <br>
+              <label for="mensaje">Mensaje:</label>
+              <br>
+              <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </article>
+      
+          <aside>
+            <p>Nos pondremos en contacto contigo a la brevedad.</p>
+          </aside>
+        </div>
+      </section>
     <footer>
         <p>&copy; 2025 Práctica 8</p>
     </footer>

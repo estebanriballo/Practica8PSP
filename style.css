@@ -83,11 +83,28 @@ footer {
     border-radius: 10px;
 }
 
+.section-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 1.5rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transform: translateZ(0);
+    transition: transform 0.3s ease;
+  }
+
+  .section-content:hover {
+    transform: scale(1.05) !important;
+  }
 /* Efecto hover para los campos de texto */
-input[type="text"], textarea {
-    transition: transform 0.3s ease-in-out;
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
 }
 
-input[type="text"]:hover, textarea:hover {
-    transform: scale(1.5);
+.dark-mode main, .dark-mode aside, .dark-mode header, .dark-mode footer {
+    background-color: #1f1f1f;
 }
