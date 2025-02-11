@@ -1,45 +1,32 @@
+/* Estilo base */
 body {
-    background-image: url('imagenes/Fondo\ isaac.png');
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-size: cover;
-    background-size: 100% 100%;
+    background-color: #2e2e2e; /* Gris oscuro */
+    background-image: none; /* Elimina la imagen de fondo */
     font-family: Arial, sans-serif;
-}
-
-table, th, td {
-    border: 2px solid rgb(134, 42, 127);
-    border-collapse: collapse;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 a.enlace {
-    color: rgb(255, 83, 83);
-}
-a.enlace:hover {
     color: yellow;
 }
-a.otro {
-    color: rgb(180, 40, 169);
+a.enlace:hover {
+    color: orange;
 }
-a.otro:hover {
-    color: red;
+a.amarillo {
+    color: yellow;
 }
-a.otro:visited {
-    color: rgb(57, 93, 212);
+a.amarillo:hover {
+    color: orange;
 }
-a.rojo {
-    color: red;
-}
-a.rojo:hover {
-    color: rgb(170, 5, 170);
-}
-a.rojo:visited {
+a.amarillo:visited {
     color: rgb(57, 93, 212);
 }
 
 h1 {
     text-transform: capitalize;
-    text-shadow: 0 0 5px #FF0000, 0 0 3px #b700ff;
+    text-shadow: 0 0 5px #e8ff1e, 0 0 3px #ffb71b;
     font-style: italic;
     text-align: center;
 }
@@ -50,15 +37,25 @@ h1 {
     margin: auto;
 }
 
+/* Título y logo */
 #titulo {
-    position: relative;
-    top: 0px;
-    left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
+#titulo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px; 
+}
+
+/* Barra lateral */
 #lateral {
     position: fixed;
     left: 10px;
+    top: 50px;
     height: 540px;
 }
 
@@ -71,17 +68,12 @@ h1 {
     bottom: -360px;
 }
 
+/* Texto principal */
 #texto {
-    position: relative;
-    left: 270px;
+    margin-left: 150px;
 }
 
-#exit {
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-}
-
+/* Botones */
 button {
     background-color: orange;
     border: none;
@@ -92,4 +84,78 @@ button {
 
 button:hover {
     transform: scale(1.1);
+}
+
+/* Salir */
+#exit {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+/* ======== Diseño Responsive ======== */
+
+/* Pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+
+    /* Título y logo */
+    #titulo {
+        flex-direction: column; /* Apila logo y texto */
+        text-align: center;
+    }
+
+    #titulo img {
+        height: 30px; /* Logo más pequeño */
+    }
+
+    /* Barra lateral */
+    #lateral {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    /* Índice en pantalla pequeña */
+    #indice {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Texto */
+    #texto {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Enlaces */
+    a.enlace {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media screen and (max-width: 1024px) {
+
+    /* Barra lateral y contenido */
+    #lateral {
+        left: 20px;
+        top: 50px;
+    }
+
+    #texto {
+        margin-left: 200px;
+    }
+
+    /* Título y logo */
+    #titulo img {
+        height: 35px; /* Logo moderadamente pequeño */
+    }
 }
