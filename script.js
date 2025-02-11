@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     button.addEventListener("click", function () {
         document.body.classList.toggle("dark-mode");
-        document.querySelectorAll("main, aside, header, footer").forEach(element => {
+        document.querySelectorAll("main, aside, header, footer, div").forEach(element => {
             element.classList.toggle("dark-mode");
         });
     });
