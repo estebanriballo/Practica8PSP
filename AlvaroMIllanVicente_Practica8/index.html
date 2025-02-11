@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a nuestra página sobre Node.js</h1>
+        <p>Autor: Álvaro Millán Vicente</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#features">Características</a></li>
+            <li><a href="#benefits">Beneficios</a></li>
+            <li><a href="#uses">Usos</a></li>
+            <li><a href="#images">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="inicio">
+        <article>
+            <h2>¿Qué es Node.js?</h2>
+            <p>Node.js es un entorno de ejecución y una biblioteca de código abierto y multiplataforma para ejecutar aplicaciones web fuera del navegador del cliente. 
+            Ryan Dahl lo desarrolló en 2009 y es una herramienta ideal para aplicaciones escalables y de alto rendimiento.</p>
+        </article>
+    </section>
+    <section id="features">
+        <h2>Características de Node.js</h2>
+        <ul>
+            <li>Basado en el motor V8 de Google Chrome.</li>
+            <li>Modelo de ejecución asincrónico y basado en eventos.</li>
+            <li>Compatible con JavaScript en el lado del servidor.</li>
+            <li>Soporta miles de conexiones simultáneas sin bloqueo.</li>
+            <li>Gran ecosistema con más de 1 millón de paquetes en npm.</li>
+        </ul>
+    </section>
+    <section id="benefits">
+        <h2>Beneficios de usar Node.js</h2>
+        <ul>
+            <li>Rendimiento alto gracias a su arquitectura basada en eventos.</li>
+            <li>Ideal para aplicaciones en tiempo real como chats o juegos en línea.</li>
+            <li>Gran comunidad y soporte continuo.</li>
+            <li>Facilidad para desarrollo de APIs y microservicios.</li>
+        </ul>
+    </section>
+    <section id="uses">
+        <h2>¿Dónde se usa Node.js?</h2>
+        <ul>
+            <li>Desarrollo de servidores web y APIs REST.</li>
+            <li>Aplicaciones de streaming como Netflix.</li>
+            <li>Servicios en la nube y plataformas escalables.</li>
+            <li>Internet de las cosas (IoT) para dispositivos conectados.</li>
+        </ul>
+    </section>
+    <section id="images">
+        <h2>Galería de Node.js</h2>
+        <button id="showImages">Mostrar Imágenes</button>
+        <button id="hideImages">Ocultar Imágenes</button>
+        <div id="imageContainer" class="hidden">
+            <img src="imagenes/node1.png" alt="Node.js 1">
+            <img src="imagenes/node2.png" alt="Node.js 2">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
